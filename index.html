@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota Fiscal de Serviço</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="cabecalho">
+    <a href="#"><img src="img/logo.png" alt=""></a>
+    <nav class="navegacao">
+      <ul>
+        <li><a href="https://www.saguilog.com.br/">SaguiLog</a></li>
+        <li><a href="https://www.saguicontrol.com.br/">SaguiControl</a></li>
+        <li><a href="https://www.saguiedu.com.br/">SaguiEdu</a></li>
+        <li><a href="https://www.saguitech.com.br/microsoft">Microsoft</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+    <div class="container">
+        <h2>Exercício Prático</h2>
+        <form id="notaFiscalForm">
+            <label for="valorVenda">Valor da Venda:</label>
+            <input type="number" id="valorVenda" required>
+
+            <label for="itens">Itens Vendidos:</label>
+            <input type="text" id="itens" required>
+
+            <label for="irpf">IRPF (%):</label>
+            <input type="number" id="irpf" required>
+
+            <label for="pis">PIS (%):</label>
+            <input type="number" id="pis" required>
+
+            <label for="cofins">COFINS (%):</label>
+            <input type="number" id="cofins" required>
+
+            <label for="inss">INSS (%):</label>
+            <input type="number" id="inss" required>
+
+            <label for="issqn">ISSQN (%):</label>
+            <input type="number" id="issqn" required>
+
+            <button type="button" id="calcularNota">Gerar Nota Fiscal</button>
+        </form>
+        <div id="notaFiscal">
+            <!-- Nota Fiscal será exibida aqui -->
+        </div>
+    </div>
+
+    <footer class="rodape">
+      <p>© Todos os direitos reservados</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
